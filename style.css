@@ -1,0 +1,203 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}
+
+
+span{
+    color: rgb(0, 0, 126);
+}
+
+body{
+    font-family: sans-serif;
+    line-height: 2rem;
+
+}
+header{
+    position: fixed;
+    width: 100%;
+    justify-content: center;
+    background-color: #333333;
+    font-size: 0.8rem;
+
+    
+}
+
+nav{
+   display: grid;
+   grid-template-columns: repeat(13, auto); 
+   grid-auto-flow: column;
+   place-items: center;
+   justify-content: center;
+}
+
+nav:hover{
+    transform: scale(1.2);
+}
+
+header li{
+    list-style: none;
+    display: grid;
+    margin: 0.5rem;
+    display: inline;
+   
+}
+
+header a{
+    text-decoration: none;
+    color: rgb(209, 209, 209);
+}
+
+ .apple-logo{
+    display: grid;
+} 
+
+
+main{
+
+    padding: 1rem ;
+}
+
+main a{
+    text-decoration: none;
+    color: rgb(32, 32, 32);
+    font-weight: 300;
+}
+
+
+.first-section{
+    text-align: center;
+    background-image: url(/images/iphone\ 13.jpg);
+    width: 100%;
+    height: 70vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:auto;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+
+}
+
+.first-section h2{
+text-align: center;
+padding-top: 2rem;
+}
+
+
+.first-section h3{
+    text-align: center;
+}
+
+.first-section a{
+   padding: 1rem;
+}
+
+
+.second-section{
+    text-align: center;
+    background-image: url(/images/iphone13-2.jpg);
+    width: 100%;
+    height: 70vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:auto;
+    margin-bottom: 0.5rem;
+}
+
+
+.second-section h2{
+    text-align: center;
+    padding-top: 2rem;
+    color: white;
+    }
+    
+    
+    .second-section h3{
+        text-align: center;
+        color: white;
+    }
+    
+    .second-section a{
+       padding: 1rem;
+       color: white;
+    }
+    
+
+    .third-section{
+        background-image: url(/images/macbook.jpg) ;
+        background-position: center;
+        background-size:auto;
+        width: 100%;
+        height: 70vh;
+        text-align: center;
+    }
+    
+    .third-section h2{
+    text-align: center;
+    padding-top: 2rem;
+    }
+    
+    
+    .third-section h3{
+      text-align: center;
+    }
+    
+    .third-section a{
+       padding: 1rem;
+    }
+  
+    
+
+
+.products{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    grid-gap: 10rem;
+    margin-bottom: 10rem;
+    /* border: 1px solid black;s */
+}
+
+
+.fourth-section li{
+    list-style: none;
+    text-align: center;
+}
+
+.fourth-section p{
+    text-align: center;
+}
+
+.last-section p{
+    padding-bottom: 1rem;
+    font-size: 0.8rem;
+    color: rgb(102, 102, 102);
+}
+.footer-grid{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    padding: 1rem;
+    list-style: none;
+    justify-items: center;
+    color: rgb(102, 102, 102);
+    font-size: 0.8rem;
+
+}
+
+
+@media screen and (max-width:400px){
+    nav ul{
+        display: none;
+    }
+
+
+}
+
+
+
+
