@@ -6,13 +6,8 @@
 
 img{
     width: 100%;
-    height: 100%;
 }
 
-
-span{
-    color: rgb(0, 0, 126);
-}
 
 body{
     font-family: sans-serif;
@@ -22,80 +17,76 @@ body{
 header{
     position: fixed;
     width: 100%;
+    display: grid;
     justify-content: center;
     background-color: #333333;
-    font-size: 0.8rem;
-
-    
+    font-size: 0.8rem;  
 }
 
-nav{
+.nav-items{
    display: grid;
-   grid-template-columns: repeat(13, auto); 
    grid-auto-flow: column;
-   place-items: center;
-   justify-content: center;
+   list-style: none;
+   align-items: center;
+   list-style: none;
+   gap: 2rem;
 }
 
-nav:hover{
+.nav-items:hover{
     transform: scale(1.2);
 }
 
-header li{
-    list-style: none;
-    display: grid;
-    margin: 0.5rem;
-    display: inline;
-   
-}
 
 header a{
     text-decoration: none;
     color: rgb(209, 209, 209);
 }
 
- .apple-logo{
-    display: grid;
-} 
-
-
-main{
-
-    padding: 1rem ;
-}
-
-main a{
-    text-decoration: none;
-    color: rgb(32, 32, 32);
-    font-weight: 300;
-}
 
 
 .first-section{
-    text-align: center;
     background-image: url(/images/iphone\ 13.jpg);
     width: 100%;
-    height: 70vh;
+    height: 60vh;
     background-position: center;
     background-repeat: no-repeat;
-    background-size:auto;
+    background-size:cover;
     margin-bottom: 0.5rem;
     margin-top: 0.5rem;
 
 }
 
+main .top-notification{
+    padding-top: 4rem;
+    text-align: center;
+}
+.top-notification a{
+    text-decoration: none;
+    color: blue;
+}
+
+.first-section a{
+    text-decoration: none;
+    color: blue;   
+  }  
+
 .first-section h2{
 text-align: center;
-padding-top: 2rem;
+padding-top: 1rem;
 }
 
 
 .first-section h3{
-    text-align: center;
+text-align: center;
 }
 
-.first-section a{
-   padding: 1rem;
+
+.first-section-links{
+    display: grid;
+    grid-auto-flow: column;
+    list-style: none;
+    justify-content: center;
+    gap: 2rem;
 }
 
 
@@ -103,95 +94,144 @@ padding-top: 2rem;
     text-align: center;
     background-image: url(/images/iphone13-2.jpg);
     width: 100%;
-    height: 70vh;
+    height: 60vh;
     background-position: center;
     background-repeat: no-repeat;
-    background-size:auto;
+    background-size:cover;
     margin-bottom: 0.5rem;
+    padding: 2rem;
 }
 
 
-.second-section h2{
+.second-section h2 a{
+    text-decoration: none;
     text-align: center;
-    padding-top: 2rem;
     color: white;
     }
     
     
-    .second-section h3{
-        text-align: center;
-        color: white;
-    }
-    
-    .second-section a{
-       padding: 1rem;
-       color: white;
-    }
-    
-
-    .third-section{
-        background-image: url(/images/macbook.jpg) ;
-        background-position: center;
-        background-size:auto;
-        width: 100%;
-        height: 70vh;
-        text-align: center;
-    }
-    
-    .third-section h2{
+.second-section h3 a{
+    text-decoration: none;
     text-align: center;
-    padding-top: 2rem;
+    color: #dba7cd ;;
     }
-    
-    
-    .third-section h3{
-      text-align: center;
-    }
-    
-    .third-section a{
-       padding: 1rem;
-    }
-  
     
 
 
-.products{
+.second-section-links{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
-    grid-gap: 10rem;
-    margin-bottom: 10rem;
-    /* border: 1px solid black;s */
-}
-
-
-.fourth-section li{
+    grid-auto-flow: column;
     list-style: none;
+    justify-content: center;
+    gap: 2rem;
+    }
+
+.second-section-links a{
+   text-decoration: none;
+   color: blue ;
+    }
+    
+
+.third-section{
+   background-image: url(/images/macbook.jpg) ;
+   background-position: center;
+   background-size:cover;
+   width: 100%;
+   height: 60vh;
+   text-align: center;
+   padding: 2rem;
+    }
+    
+.third-section h2 a{
+   text-align: center;
+   padding-top: 2rem;
+   text-decoration: none;
+   color: blue;
+    }
+    
+    
+.third-section h3 a{
+    text-decoration: none;
     text-align: center;
+    color: blue;
+    }
+
+.third-section-links{
+    display: grid;
+    grid-auto-flow: column;
+    list-style: none;
+    justify-content: center;
+    gap: 2rem;
+    }
+    
+.third-section-links a{
+  text-decoration: none;
+  color: blue ;
+        }
+
+.fourth-section{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    grid-auto-flow: row;
+    overflow: hidden;
+    margin: 2rem;
+    gap: 1.5rem;
 }
 
-.fourth-section p{
+.product-list{
+   
     text-align: center;
 }
+.product-list a{
+    text-decoration: none;
+    color: blue;
+}
+.product-img{
+    object-fit:fill;
+    object-position: top;
+    /* width: 450px; */
+}
 
-.last-section p{
-    padding-bottom: 1rem;
-    font-size: 0.8rem;
+.product-links{
+    display: grid;
+    grid-auto-flow: column;
+    list-style: none;
+    justify-content: center;
+    gap: 2rem;
+    }
+
+.last-section{
+    display: grid;
+    grid-template-columns: 1fr;
     color: rgb(102, 102, 102);
+    font-size: 0.8rem;
+    margin: 3rem;
+}
+
+.list-menu{
+  display: grid;
+ 
 }
 .footer-grid{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    padding: 1rem;
     list-style: none;
     justify-items: center;
     color: rgb(102, 102, 102);
     font-size: 0.8rem;
-
+    margin-bottom:  2rem;
 }
 
 
-@media screen and (max-width:400px){
-    nav ul{
+.footer-grid a{
+    color: rgb(102, 102, 102);
+    font-size: 0.8rem;
+    text-decoration: none;
+}
+
+
+@media screen and (max-width:450px){
+    .nav-list-items{
         display: none;
     }
 
